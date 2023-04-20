@@ -7,26 +7,31 @@ html {
 }
 
 body {
-	// ...
+	width: 80%;
+	margin: 0 auto;
+	font-family: $serif;
+	font-size: 12px;
 }
 
+
+
 button {
-	// background-color:
-	// border-color:
-	// color:
-	// font-weight:
-	// padding:
-	// border-radius:
-	// transition:
-	// font-family:
-	// text-transform:
-	// font-size:
-	// text-align:
+	background-color: $light-blue;
+	border-color: $dark-blue;
+	color: white;
+	font-weight: 700px;
+	padding: 7px 9px;
+	border-radius: 3px;
+	transition: background-color 0.3s;
+	font-family: $serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	// text-align: 
 }
 
 button:hover {
-	// background-color:
-	// border-color:
+	background-color: greenyellow;
+	// border-color: 
 }
 
 /*
@@ -47,4 +52,31 @@ hr {
 .hr-top {
 	height: 2px;
 	margin-bottom: 1px;
+}
+
+.main-nav {
+	display: flex;
+	background: white;
+	justify-content: space-between;
+	padding-top: 10px;
+	// height: 30px;
+}
+
+li {
+	display: inline-block;
+	font-family: $serif;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.left-sidebar:hover {
+	background-color: $lightest-gray;
+}
+
+.left-sidebar span {
+	margin-left: 7px;
+}
+
+.left-sidebar {
+	margin: 8px;
 }
