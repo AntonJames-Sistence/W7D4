@@ -2,10 +2,12 @@
 
 .masthead {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
+	
 }
 
 .language-nav {
@@ -34,6 +36,8 @@
 .logo {
 	max-width: 400px;
 	margin-top: 10px;
+	left: 0px;
+	right: 0px;
 }
 
 .masthead-links {
@@ -42,12 +46,20 @@
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	
+	li p {
+		margin-right: 10px;
+	}
 
 	li {
 		margin-left: 10px;
 		border-right: 1px solid $light-gray;
 	}
 
+	ul {
+		display: flex;
+		// justify-content: space-between;
+	}
 	button {
 		background: none;
 		padding: 0px;
@@ -64,6 +76,7 @@
 	button, 
 	time {
 		margin-right: 10px;
+		font-size: 11px;
 	}
 
 	i {
@@ -73,5 +86,10 @@
 	strong {
 		color: green;
 	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
 
 }
